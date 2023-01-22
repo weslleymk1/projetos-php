@@ -11,10 +11,7 @@
 <body>
  <?php 
     require 'header.html';
-
     ?>
-
-
     <main>
         <div class="box">
             <form action="">

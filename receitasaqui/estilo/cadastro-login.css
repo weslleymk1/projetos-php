@@ -45,7 +45,6 @@ div.box{
 div.inputBox {
     position: relative;
     padding-bottom: 25px;
-
 }
 input.inputUser{
     background: none;
@@ -55,6 +54,7 @@ input.inputUser{
     font-size: 15px;
     width: 100%;
     letter-spacing: 1px;
+
 }
 .inputUser:focus ~ .labelInput,
 .inputUser:valid ~ .labelInput{
