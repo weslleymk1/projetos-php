@@ -29,11 +29,6 @@
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: var(--amarelo0);
-}
-
 /* Estilos para o cabeçalho */
 header {
     background-color: var(--amarelo2);

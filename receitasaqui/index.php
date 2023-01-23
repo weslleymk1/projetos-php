@@ -11,10 +11,10 @@
 
 </head>
 <body>
+    
     <header>
-
         <div id="div-header">
-            <a href="../index.html">
+            <a href="#">
                 <h1>Receitas Aqui</h1>
             </a>
 
@@ -24,8 +24,8 @@
             </form>
             
             <div id="autenticar">
-                <a href="paginas/cadastro.php" id="login-btn" class="sign" target="_blank"><i class="fas fa-sign-in-alt"></i> Entrar</a>
-            </div>
+                <a href="login.php" id="login-btn" class="sign"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+        </div>
 
         </div>
 
@@ -41,8 +41,6 @@
             
         </nav>
     </header>
-
-
     <main>
         <h1>Bem-vindo ao Meu Site de Receitas</h1>
         <section>

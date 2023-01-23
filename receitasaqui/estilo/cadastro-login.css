@@ -29,11 +29,11 @@
     font-family: var(--fonte-padrao);
 }
 body{
-    background-color: var(--amarelo0);
+    background-color: white;
 }
 
 /* Centralizando o Conteúdo*/
-div.box{
+/* div.box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,20 +41,38 @@ div.box{
     padding: 15px;
     border-radius: 15px;
     width: 40%;
+} */
+div.box{
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 600px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.459);
+    border: .3px solid rgba(0, 0, 0, 0.178);
+    border-top: none;
+}
+fieldset {
+    border: none;
+    padding: 5px;
+    
+
 }
 div.inputBox {
     position: relative;
     padding-bottom: 25px;
 }
+
 input.inputUser{
+    padding: 5px;
     background: none;
-    border: none;
-    border-bottom: 1px solid black;
     outline: none;
     font-size: 15px;
-    width: 100%;
+    width: 90%;
     letter-spacing: 1px;
-
+    border-radius: 5px;
+    border: .7px solid black;
 }
 .inputUser:focus ~ .labelInput,
 .inputUser:valid ~ .labelInput{
@@ -65,36 +83,26 @@ input.inputUser{
 
 label.labelInput{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
     pointer-events: none;
     transition: .4s;
+    color: rgb(102, 102, 102);
+    font-size: .9em;
 }
-fieldset {
-    border: 3px solid dodgerblue;
-    padding: 5px;
-    border-radius: 20px;
-}
-legend{
-    border: 1px solid dodgerblue;
-    padding: 10px;
-    text-align: center;
-    background-color: dodgerblue;
-    border-radius: 10px;
-}
-div#box-nascimento{
 
-}
+
+
 input#nascimento{
+    padding: 0 5px 0 10px;
     border: none;
-    padding: 8px;
-    background-color: dodgerblue;
     border-radius: 8px;
     outline: none;
-    font-size: 15px;
+    border-bottom: 1px solid black;
+    font-size: 1.2em;
 }
 input#submit{
-    background-color: dodgerblue;
+    background-color: var(--vermelho3);
     padding: 10px;
     width: 50%;
     border: none;
@@ -106,5 +114,11 @@ input#submit{
     transition: .3s;
 }
 input#submit:hover{
-    background-color: red;
+    background-color: rgb(189, 0, 0);
+    box-shadow: 0 0 8px rgb(189, 0, 0);
+    font-size: 16px;
+}
+fieldset p {
+    text-align: center;
+    padding: 15px;
 }
