@@ -21,9 +21,9 @@
                 <a href="#"> <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" alt="pesquisa"></a>
             </form>
               
-            <!-- <div id="autenticar">
-                <a href="login.php" id="login-btn" class="sign" target="_blank"><i class="fas fa-sign-in-alt"></i> Entrar</a>
-            </div> -->
+            <div id="autenticar">
+                <a href="sair.php" id="login-btn" class="sign"><i class="fas fa-sign-in-alt"></i> Sair</a>
+            </div>
 
         </div>
 

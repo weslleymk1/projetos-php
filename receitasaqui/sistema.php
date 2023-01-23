@@ -5,10 +5,10 @@
     {
         unset($_SESSION['email']);
         unset($_SESSION['senha']);
-        header('Location: login.php');
+        header('Location: loginb.php');
     }
     $logado = $_SESSION['email'];
-    $pass = $_SESSION['senha']
+    $pass = $_SESSION['senha'];
 
 ?>
 

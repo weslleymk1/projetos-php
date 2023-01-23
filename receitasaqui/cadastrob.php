@@ -1,3 +1,31 @@
+<?php
+
+    if(isset($_POST["submit"]))
+    {
+        // print_r('Nome:' . $_POST['nome']);
+        // print_r('<br>');
+        // print_r('Email:' . $_POST['email']);
+        // print_r('<br>');
+        // print_r('Telefone:' . $_POST['telefone']);
+        // print_r('<br>');
+        // print_r('Senha:' . $_POST['senha']);
+        // print_r('<br>');
+        // print_r('Nascimento:' . $_POST['nascimento']);
+
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha) VALUES ('$nome', '$email', '$senha')");
+
+    header('Location: loginb.php');
+
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,39 +53,43 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
-
 </head>
 <body>
+
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" action="cadastrob.php" method="POST">
 					<span class="login100-form-title p-b-49">
 						Registre-se
 					</span>
-
 					<div class="inputBox validate-input m-b-23" data-validate = "Campo obrigatório*">
-						<span class="label-input100">Nome Completo</span>
-						<input class="input100" type="text" name="nome" id="nome" placeholder="Insira seu nome">
+						<span class="label-input100">Nome Completo:</span>
+
+						<input type="text" name="nome" class="input100" id="nome" placeholder="Insira seu nome">
+
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
-
 					<div class="inputBox validate-input m-b-23" data-validate = "Campo obrigatório*">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="email" name="email" id="email" placeholder="Insira seu endereço de email">
+						<span class="label-input100">Email:</span>
+
+						<input type="email" name="email" class="input100" id="email" placeholder="Insira seu endereço de email">
+
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
-
 					<div class="inputBox validate-input m-b-23" data-validate="Campo obrigatório*">
-						<span class="label-input100">Senha</span>
-						<input class="input100" type="password" name="senha" id="senha" placeholder="Digite uma senha">
+						<span class="label-input100">Senha:</span>
+
+						<input type="password" name="senha" class="input100"  id="senha" minlength="8" placeholder="8 caracteres minimo">
+
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 
 					<div class="inputBox validate-input" data-validate="Campo obrigatório*">
-						<span class="label-input100">Confirmar Senha</span>
-						<input class="input100" type="password" name="senha" id="confirma-senha" placeholder="Repita a senha">
+						<span class="label-input100">Confirme sua Senha:</span>
+
+						<input type="password" class="input100" name="confirma-senha" id="confirma-senha" placeholder="Repita a senha">
+
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 					
@@ -66,8 +98,8 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								<input type="submit" name='submit' id="submit" value="Criar Conta">
+							<button type="submit" name='submit' id="submit" class="login100-form-btn">
+								Criar Conta
 							</button>
 						</div>
 					</div>
@@ -94,7 +126,7 @@
 						</a>
 					</div>
 
-					<div class="flex-col-c p-t-155">
+					<div class="flex-col-c p-t-80">
 						<span class="txt1 p-b-17">
 							Já tem uma conta?
 						</span>
@@ -113,6 +145,8 @@
 
 	<div id="dropDownSelect1"></div>
 	
+
+	<script src="script/validar-senha.js"></script>
 
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 

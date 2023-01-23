@@ -3,6 +3,7 @@
 <head>
 	<title>Login - Receitas Aqui</title>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
 
@@ -28,23 +29,24 @@
 <!--===============================================================================================-->
 </head>
 <body>
+	<a href="index.php">Voltar</a>
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form">
+				<form action="testLogin.php" method="POST" class="login100-form validate-form">
 					<span class="login100-form-title p-b-49">
 						Login
 					</span>
 
 					<div class="inputBox validate-input m-b-23" data-validate = "Campo obrigatório*">
 						<span class="label-input100">Usuário</span>
-						<input class="input100" type="text" name="username" placeholder="Endereço de email">
+						<input class="input100" type="email" name="email" placeholder="Endereço de email">
 						<span class="focus-input100" data-symbol="&#xf206;"></span>
 					</div>
 
 					<div class="inputBox validate-input" data-validate="Campo obrigatório*">
 						<span class="label-input100">Senha</span>
-						<input class="input100" type="password" name="pass" placeholder="Escreva sua senha">
+						<input class="input100" type="password" name="senha" placeholder="Escreva sua senha">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
 					
@@ -57,8 +59,8 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
-								<input type="submit" name='submit' id="submit" value="Entrar">
+							<button type="submit" name='submit' id="submit" class="login100-form-btn">
+								Entrar
 							</button>
 						</div>
 					</div>
@@ -90,9 +92,7 @@
 							Não tem uma conta?
 						</span>
 
-						<a href="cadastrob.php" class="txt2">
-							Cadastre-se aqui
-						</a>
+						<a href="cadastrob.php" class="txt2">Cadastre-se</a>
 					</div>
 				</form>
 			</div>
