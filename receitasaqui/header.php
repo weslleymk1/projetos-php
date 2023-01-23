@@ -29,16 +29,29 @@
 
 
         <nav>
-            <ul>
+            <ul class="dpcontainer">
                 <li><a href="#">Aves</a></li>
                 <li><a href="#">Carnes</a></li>
-                <li><a href="#">Bolos</a></li>
                 <li><a href="#">Massas</a></li>
+                <li><a href="#">Bolos</a></li>
                 <li><a href="#">Doces & Sobremesas</a></li>
-                <li><a href="#">Outros</a></li>
+                <li><a href='#'>Saladas</a></li>                          
+                <li><a href="#">Pães</a></li>
+                <li><a href="#">Bebidas</a></li>               
+                
+                <li class="dropdown"><a href="#">Mais...</a>
+                    <ul class='sub-menu'>
+                        <li><a href="#">Sopas e Caldos</a></li>
+                        <li><a href="#">Arroz e Risotos</a></li>
+                        <li><a href="#">Lanches e Salgados</a></li>
+                        <li><a href="#">Entradas e petiscos</a></li>
+                        <li><a href="#">Molhos e Patês</a></li>
+                        <li><a href="#">Especiais</a></li>                        
+                    </ul>
+                </li>
             </ul>
-            
         </nav>
     </header>
 </body>
 </html>
+

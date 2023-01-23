@@ -126,7 +126,6 @@ nav > ul > li > a {
 nav > ul > li:hover > a {
   /* color: #444;  */
     color: var(--cor3);
-    /* border-bottom: 3px solid #444; */
     border-bottom: 3px solid var(--cor1);
 }
 
