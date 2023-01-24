@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas Aqui - Página Principal</title>
     <link rel="stylesheet" href="estilo/style.css">
-    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost/projetosphp/receitasaqui/media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 </head>
@@ -16,11 +16,13 @@
     //print_r($_SESSION);
     if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
     {
-        require "header-guest.php";
+        require "paginas/header-guest.php";
     } else {
-        require "header.php";
+        require "paginas/header.php";
     }     
 ?>
+
+
 
     <main>
         <h1>Bem-vindo ao Meu Site de Receitas</h1>

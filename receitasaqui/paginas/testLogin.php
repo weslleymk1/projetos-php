@@ -27,7 +27,7 @@
         {
         $_SESSION['email'] = $email;
         $_SESSION['senha'] = $senha;
-        header ('Location: index.php');
+        header ('Location: http://localhost/projetosphp/receitasaqui/index.php');
         }
 
 

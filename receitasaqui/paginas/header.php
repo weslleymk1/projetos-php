@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="estilo/header-footer.css">
+    <link rel="stylesheet" href="http://localhost/projetosphp/receitasaqui/estilo/header-footer.css">
+    <link rel="stylesheet" href="http://localhost/projetosphp/receitasaqui/estilo/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
     <header>
 
         <div id="div-header">
-            <a href="index.php">
+            <a href="http://localhost/projetosphp/receitasaqui/index.php">
                 <h1>Receitas Aqui</h1>
             </a>
 
@@ -21,7 +22,7 @@
             </form>
               
             <div id="autenticar">
-                <a href="sair.php" id="login-btn" class="sign"><i class="fas fa-sign-in-alt"></i> Sair</a>
+                <a href="http://localhost/projetosphp/receitasaqui/paginas/sair.php" id="login-btn" class="sign"><i class="fas fa-sign-in-alt"></i> Sair</a>
             </div>
 
         </div>
@@ -29,7 +30,7 @@
 
         <nav>
             <ul class="dpcontainer">
-                <li class="dropdown"><a href="paginas/categorias/categorias.php">Categorias: </a>
+                <li class="dropdown"><a href="http://localhost/projetosphp/receitasaqui/paginas/categorias/categorias.php">Categorias: </a>
                     <ul class='sub-menu'>
                         <li><a href="#">Doces & Sobremesas</a></li>
                         <li><a href="#">Sopas e Caldos</a></li>
