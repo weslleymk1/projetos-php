@@ -11,16 +11,16 @@
 
 </head>
 <body>
-    <?php
-        session_start();
-        //print_r($_SESSION);
-        if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
-        {
-            require "header-guest.php";
-        } else {
-            require "header.php";
-        }     
-    ?>
+<?php
+    session_start();
+    //print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        require "header-guest.php";
+    } else {
+        require "header.php";
+    }     
+?>
 
     <main>
         <h1>Bem-vindo ao Meu Site de Receitas</h1>

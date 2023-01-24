@@ -18,7 +18,6 @@
 
             <form class="search-container">
                 <input type="text" id="search-bar" placeholder="Pesquise receitas...">
-                <a href="#"> <img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" alt="pesquisa"></a>
             </form>
               
             <div id="autenticar">
@@ -30,17 +29,9 @@
 
         <nav>
             <ul class="dpcontainer">
-                <li><a href="#">Aves</a></li>
-                <li><a href="#">Carnes</a></li>
-                <li><a href="#">Massas</a></li>
-                <li><a href="#">Bolos</a></li>
-                <li><a href="#">Doces & Sobremesas</a></li>
-                <li><a href='#'>Saladas</a></li>                          
-                <li><a href="#">Pães</a></li>
-                <li><a href="#">Bebidas</a></li>               
-                
-                <li class="dropdown"><a href="#">Mais...</a>
+                <li class="dropdown"><a href="paginas/categorias/categorias.php">Categorias: </a>
                     <ul class='sub-menu'>
+                        <li><a href="#">Doces & Sobremesas</a></li>
                         <li><a href="#">Sopas e Caldos</a></li>
                         <li><a href="#">Arroz e Risotos</a></li>
                         <li><a href="#">Lanches e Salgados</a></li>
@@ -49,6 +40,13 @@
                         <li><a href="#">Especiais</a></li>                        
                     </ul>
                 </li>
+                <li><a href="#">Aves</a></li>
+                <li><a href="#">Carnes</a></li>
+                <li><a href="#">Massas</a></li>
+                <li><a href="#">Bolos</a></li>                
+                <li><a href='#'>Saladas</a></li>                          
+                <li><a href="#">Pães</a></li>
+                <li><a href="#">Bebidas</a></li>
             </ul>
         </nav>
     </header>

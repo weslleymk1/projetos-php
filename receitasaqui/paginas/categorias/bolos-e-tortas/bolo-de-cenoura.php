@@ -7,6 +7,18 @@
     <title>Receitas Aqui - Bolo de Cenoura</title>
 </head>
 <body>
+<?php
+    session_start();
+    //print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        require "header-guest.php";
+    } else {
+        require "header.php";
+    }     
+?>
+
+
     <h1>Bolo de Cenoura</h1> 
 
     <h2>Ingredientes:</h2> 
