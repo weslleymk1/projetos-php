@@ -14,7 +14,7 @@
     {require "../header-guest.php";} else {require "../header.php";}     
 ?>
 
-<h1><a href="bolos-e-tortas/bolos-e-tortas.php">Bolos e Tortas</a></h1>
+<h1><a href="bolos-e-tortas.php">Bolos e Tortas</a></h1>
 
 </body>
 </html>

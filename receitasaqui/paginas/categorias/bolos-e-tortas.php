@@ -15,7 +15,7 @@
 ?>
 
 
-    <a href="bolo-de-cenoura.php">Bolo De Cenoura</a>
+    <a href="bolos-e-tortas/bolo-de-cenoura/bolo-de-cenoura.php">Bolo De Cenoura</a>
     
 </body>
 </html>
