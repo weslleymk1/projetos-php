@@ -43,9 +43,9 @@
                     </ul>
                 </li>
                 <li><a href="#">Aves</a></li>
-                <li><a href="#">Carnes</a></li>
+                <li><a href="http://localhost/projetosphp/receitasaqui/paginas/categorias/carnes.php">Carnes</a></li>
                 <li><a href="#">Massas</a></li>
-                <li><a href="#">Bolos</a></li>                
+                <li><a href="http://localhost/projetosphp/receitasaqui/paginas/categorias/bolos-e-tortas.php">Bolos</a></li>                
                 <li><a href='#'>Saladas</a></li>                          
                 <li><a href="#">Pães</a></li>
                 <li><a href="#">Bebidas</a></li>
